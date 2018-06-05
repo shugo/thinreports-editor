@@ -18,7 +18,7 @@
     "build:linux": "node tasks/build.js linux",
     "release": "npm run compile:prod && npm run build",
     "watch": "node tasks/watch.js",
-    "postinstall": "cd app && npm install"
+    "postinstall": "cd app && yarn install"
   },
   "devDependencies": {
     "archiver": "^5.0.2",
