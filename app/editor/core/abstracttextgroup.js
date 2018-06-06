@@ -209,7 +209,7 @@ thin.core.AbstractTextGroup.prototype.setTextLineHeightRatio = function(ratio) {
     var lineHeight;
 
     if (this.hasLineHeightChanged_(this.getFontSize(), this.getFontFamily(), numRatio)) {
-      lineHeight = thin.Font.getHeight(this.getFontFamily(), this.getFontSize()) * numRatio;
+      lineHeight = thin.Font.getHeight(this.getFontFamily(), this.getFontSize(), this.isFontBold()) * numRatio;
     } else {
       lineHeight = this.getRawLineHeight();
     }
