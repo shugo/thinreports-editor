@@ -27,6 +27,7 @@
     "del": "^6.0.0",
     "electron": "^9.3.2",
     "electron-packager": "^15.1.0",
-    "js-yaml": "^3.14.0"
+    "js-yaml": "^3.14.0",
+    "fontmetrics": "^1.0.0"
   }
 }

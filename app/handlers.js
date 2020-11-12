@@ -1,6 +1,7 @@
 const { dialog, nativeImage } = require('electron').remote;
 const fs = require('fs');
 const path = require('path');
+const FontMetrics = require('fontmetrics');
 
 const handlers = {};
 
@@ -99,4 +100,5 @@ handlers.exportAs = (callback, type, content) => {
   callback.onSuccess();
 }
 
+window.FontMetrics = FontMetrics;
 window.handlers = handlers;
